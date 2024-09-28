@@ -65,7 +65,7 @@ const Quiz = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center h-screen bg-red-500">
       <div className="w-full max-w-xl p-6 bg-white rounded-lg shadow-md">
         <h1 className="text-xl font-semibold mb-4">
           Question {currentQuestion + 1} / {questions.length}
@@ -79,9 +79,9 @@ const Quiz = () => {
         <div className="flex justify-between mt-6">
           <Button
             onClick={handlePreviousQuestion}
-            disabled={currentQuestion === 0}
+            // disabled={currentQuestion === 0}
             text="Previous"
-            bgColor="blue"//bg-gray-500
+            bgColor=""
           />
           <Button
             onClick={handleNextQuestion}
